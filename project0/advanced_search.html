@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <style>
+        #logo {
+            background-position: 0 -35px;
+            height: 33px;
+            width: 92px;
+            margin: 8px 0 0 8px
+        }
+
+        .bg {
+            background-color: lightgray;
+            min-width: 1002px;
+            height: 60px
+        }
+
+        #adv_search {
+            font-family: arial, sans-serif;
+            color: red;
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: normal
+        }
+
+        #fp {
+            font-size: 16px;
+            font-weight: normal;
+            color: black;
+            margin-left: 10px;
+        }
+
+
+        #all {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0 0 120px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            height: 30px
+        }
+
+        #exact {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0 0 120px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            height: 30px
+        }
+
+        #any {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0 0 120px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            height: 30px
+        }
+
+        #none {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0 0 120px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            height: 30px
+        }
+
+        #div1 {
+            margin-top: 60px;
+            margin-left: 10px;
+            font-weight: normal
+        }
+
+    </style>
+
+
+</head>
+<div class=bg>
+    <img id=logo src=google.png>
+</div>
+
+
+<body>
+    <h3 id=adv_search>Advanced Search</h3>
+
+
+    <h3 id=fp>Find pages with...</h3>
+
+    <div id=div1>
+        <h4>all these words:</h4>
+        <form action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=">
+            <input id=all type="text" name="as_q">
+
+        </form>
+
+
+
+        <h4>this exact word or phrase:</h4>
+        <form action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=">
+            <input id=exact type="text" name="as_epq">
+
+        </form>
+
+
+
+        <h4>any of these words:</h4>
+        <form action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=">
+            <input id=any type="text" name="as_oq">
+
+        </form>
+
+
+
+        <h4>none of this words:</h4>
+
+        <form action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=">
+            <input id=none type="text" name="as_eq">
+
+        </form>
+    </div>
+</body>
+
+</html>
